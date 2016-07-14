@@ -1,1 +1,3 @@
-# bistro-app
+# Bistro (application)
+
+Food and Restaurant Management.
