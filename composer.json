@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "culinaire/bistro-app",
+    "description": "Food and Restaurant Management.",
+    "keywords": ["framework", "laravel", "food", "restaurant"],
     "license": "MIT",
     "type": "project",
     "require": {
