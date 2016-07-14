@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/','PublicController@index');
+
+Route::group(['prefix'=>'admin'], function () {
+  Route::get('/', 'DashboardController@index');
 });
