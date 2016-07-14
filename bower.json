@@ -1,0 +1,21 @@
+{
+  "name": "culinaire-bistro-app",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Frank McCoy <frankmccoy.d@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Culinaire/bistro-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  }
+}

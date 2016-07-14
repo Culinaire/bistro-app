@@ -1,6 +1,7 @@
 # Package Management
 /vendor
 /node_modules
+/bower_components
 
 # Laravel specific
 /public/storage
