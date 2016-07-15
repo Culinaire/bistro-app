@@ -15,4 +15,6 @@ Route::get('/','PublicController@index');
 
 Route::group(['prefix'=>'admin'], function () {
   Route::get('/', 'DashboardController@index');
+  Route::get('products', 'DashboardController@products');
+  Route::get('ingredients', 'DashboardController@ingredients');
 });

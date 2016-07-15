@@ -10,7 +10,19 @@ class DashboardController extends Controller
 {
   public function index()
   {
-    $page = [];
-    return view('templates.application', ['page'=>$page]);
+    $page = [
+      'name' => 'Dashboard'
+    ];
+    return view('dashboard.index', ['page'=>$page]);
+  }
+
+  public function products()
+  {
+    return view('dashboard.products');
+  }
+
+  public function ingredients()
+  {
+    return view('dashboard.ingredients');
   }
 }
