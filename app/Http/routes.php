@@ -18,4 +18,7 @@ Route::group(['prefix'=>'admin'], function () {
   Route::get('vendors', 'DashboardController@vendors');
   Route::get('products', 'DashboardController@products');
   Route::get('ingredients', 'DashboardController@ingredients');
+  Route::get('recipes', 'DashboardController@recipes');
+  Route::resource('recipes', 'RecipesController');
+  Route::get('recipes/import/{id}', 'RecipesController@import');
 });

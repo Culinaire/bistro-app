@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Vendors;
 use App\Products;
+use App\Recipes;
 
 class DashboardController extends Controller
 {
@@ -29,6 +30,11 @@ class DashboardController extends Controller
   {
     $products = Products::all();
     return view('dashboard.products.index', ['products'=>$products]);
+  }
+
+  public function recipes()
+  {
+    return redirect()->action('RecipesController@index');
   }
 
   public function ingredients()

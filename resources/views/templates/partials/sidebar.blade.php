@@ -3,5 +3,5 @@
   <li><a href="{{ url('admin/vendors') }}">Vendors</a></li>
   <li><a href="{{ url('admin/products') }}">Products</a></li>
   <li><a href="{{ url('admin/ingredients') }}">Ingredients</a></li>
-  <li><a href="#">Recipes</a></li>
+  <li><a href="{{ url('admin/recipes') }}">Recipes</a></li>
 </ul>
