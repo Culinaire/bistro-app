@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Vendors;
+use App\Products;
 
 class DashboardController extends Controller
 {
@@ -26,7 +27,8 @@ class DashboardController extends Controller
 
   public function products()
   {
-    return view('dashboard.products');
+    $products = Products::all();
+    return view('dashboard.products.index', ['products'=>$products]);
   }
 
   public function ingredients()
