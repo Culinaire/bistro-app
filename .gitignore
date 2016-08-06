@@ -24,5 +24,11 @@ bootstrap/cache/
 # OSX
 .DS_Store
 
-
+# Compiled
+resources/assets/**/*
 **/*.css.map
+public/build/rev-manifest.json
+public/build/css/app-9c5d9d5ad1.css
+public/build/js/bootstrap-fb81549ee2.js
+Envoy.blade.php
+images
