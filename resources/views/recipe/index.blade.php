@@ -14,8 +14,8 @@
   <thead>
     <tr>
       <th>ID</th>
-        <th>Slug</th>
         <th>Name</th>
+        <th>Slug</th>
         <th>Type</th>
         <th>File</th>
         <th colspan="2"></th>
@@ -29,8 +29,8 @@
           <td>{{ $recipe->slug }}</td>
           <td>{{ $recipe->type }}</td>
           <td>{{ $recipe->file }}</td>
-          <td><a class="btn btn-primary" href="{{ route('recipes.'.$recipe->type.'.edit', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Edit</a></td>
-          <td><a class="btn btn-primary" href="{{ route('recipes.'.$recipe->type.'.show', ['id'=> $recipe->id]) }}"><span class="fa fa-eye"></span> Show</a></td>
+          <td><a class="btn btn-primary btn-block" href="{{ route('recipes.'.$recipe->type.'.show', ['id'=> $recipe->id]) }}"><span class="fa fa-eye"></span> View</a></td>
+          <td><a class="btn btn-primary btn-block" href="{{ route('recipes.'.$recipe->type.'.edit', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Edit</a></td>
         </tr>
       @endforeach
     </tbody>
