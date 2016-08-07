@@ -24,11 +24,11 @@ elixir(function(mix) {
   mix.copy('node_modules/bootstrap-sass/assets/javascripts/', 'resources/assets/js');
 
   //  Styles
-  mix.sass(['app.scss']);
+  mix.sass(['app.scss'], 'public/assets/css/app.css');
 
   //  scripts
-  mix.scripts(['jquery.js'], 'public/js/jquery.js');
-  mix.scripts(['bootstrap.js'], 'public/js/bootstrap.js');
+  mix.scripts(['jquery.js'], 'public/assets/js/jquery.js');
+  mix.scripts(['bootstrap.js'], 'public/assets/js/bootstrap.js');
 
   //  Versioning
   mix.version([

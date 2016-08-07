@@ -12,5 +12,27 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.index');
+});
+
+
+Route::auth();
+
+Route::group(['prefix'=> 'app', 'middleware'=>'auth'], function () {
+
+  Route::get('/', [
+    'as' => 'dashboard',
+    'uses' => 'DashboardController@index'
+  ]);
+
+  Route::get('settings', [
+    'as' => 'settings',
+    'uses' => 'DashboardController@settings'
+  ]);
+
+  Route::get('profile', [
+    'as'=>'profile',
+    'uses' => 'DashboardController@profile'
+  ]);
+
 });
