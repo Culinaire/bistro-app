@@ -11,7 +11,9 @@
   @include('shared.navbar')
   <div class="container">
     <div class='row'>
-      @yield('content')
+      <div class="col-sm-10 col-sm-offset-1 main">
+        @yield('content')
+      </div>    
     </div>
   </div>
 @endsection

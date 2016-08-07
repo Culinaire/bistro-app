@@ -13,6 +13,7 @@ bootstrap/compiled.php
 app/storage/
 
 # Laravel 5 & Lumen specific
+public/build/**/*
 bootstrap/cache/
 .env.*.php
 .env.php
@@ -23,3 +24,7 @@ bootstrap/cache/
 
 # OSX
 .DS_Store
+
+# Sass
+.sass-cache
+*.css.map
