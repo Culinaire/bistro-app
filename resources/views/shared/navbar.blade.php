@@ -7,22 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
       <a class="navbar-brand" href="{{ url('/') }}">Bistro RM</a>
-
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
-
-      @yield('navbarPages', $navbar['pages'])
-
-      @if( Auth::check() )
-        @yield('navbarAuth', $navbar['auth']['loggedin'])
-      @else
-        @yield('navbarAuth', $navbar['auth']['loggedout'])
-      @endif
+      @include('shared.menu-main')    
     </div>
-
   </div>
-
 </nav>

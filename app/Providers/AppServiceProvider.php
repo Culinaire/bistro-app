@@ -58,9 +58,9 @@ class AppServiceProvider extends ServiceProvider
     {
       $menu = Menu::handler('navmenu');
       $menu->addClass('nav navbar-nav navbar-left');
-      $menu->add( url('#'), 'Page 1');
-      $menu->add( url('#'), 'Page 2');
-      $menu->add( url('#'), 'Page 3');
+      $menu->add( url('app/recipes'), 'Recipes');
+      $menu->add( url('app/recipes/batch'), 'Batch');
+      $menu->add( url('app/recipes/build'), 'Build');
 
       return $menu;
     }
@@ -68,7 +68,7 @@ class AppServiceProvider extends ServiceProvider
     public function registerAuthMenu()
     {
       $menuin = Menu::handler('authmenuin');
-        $menuin->addClass('nav navbar-nav navbar-right');    
+        $menuin->addClass('nav navbar-nav navbar-right');
         $menuin->add( url('app/'), 'Dashboard');
         $menuin->add( url('app/settings'), 'Settings');
         $menuin->add( url('app/profile'), 'Profile');

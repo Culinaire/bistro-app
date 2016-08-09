@@ -25,6 +25,12 @@ bootstrap/cache/
 # OSX
 .DS_Store
 
+# Compiled
+**/*.css.map
+public/build
+Envoy.blade.php
+images
+
 # Sass
 .sass-cache
 *.css.map
