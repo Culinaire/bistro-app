@@ -1,6 +1,7 @@
-@extends('master')
+@extends('templates.app')
 
 @section('content')
+  @parent
 
 @if (session('status'))
 <div class="alert alert-success">
@@ -10,7 +11,7 @@
 
 <h1 class="page-header">Recipes</h1>
 
-<table class="table table-bordered">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>ID</th>
@@ -29,8 +30,8 @@
           <td>{{ $recipe->slug }}</td>
           <td>{{ $recipe->type }}</td>
           <td>{{ $recipe->file }}</td>
-          <td><a class="btn btn-primary btn-block" href="{{ route('recipes.'.$recipe->type.'.show', ['id'=> $recipe->id]) }}"><span class="fa fa-eye"></span> View</a></td>
-          <td><a class="btn btn-primary btn-block" href="{{ route('recipes.'.$recipe->type.'.edit', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Edit</a></td>
+          <td><a class="btn btn-primary btn-block" href="{{ route('app.recipes.'.$recipe->type.'.show', ['id'=> $recipe->id]) }}"><span class="fa fa-eye"></span> View</a></td>
+          <td><a class="btn btn-primary btn-block" href="{{ route('app.recipes.'.$recipe->type.'.edit', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Edit</a></td>
         </tr>
       @endforeach
     </tbody>

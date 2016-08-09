@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald';
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; }
+
+.recipe {
+  margin: 0px;
+  padding: 5px; }
+  .recipe ul,
+  .recipe ol {
+    margin: 0px;
+    padding: 0px; }
+    .recipe ul li,
+    .recipe ol li {
+      margin: 0px;
+      padding: 0px; }
+      .recipe ul li li,
+      .recipe ol li li {
+        margin-left: 20px; }
+  .recipe ol li {
+    margin-left: 20px; }
+  .recipe ul.meta,
+  .recipe ul.quality {
+    list-style-type: none; }
+
+@media print {
+  .page-header {
+    margin-top: 5px; } }

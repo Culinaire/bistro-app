@@ -114,7 +114,7 @@ class BuildRecipesController extends Controller
       $yaml = Yaml::dump($values);
       $path = 'recipes/generated/'.$recipe->type.'/'.$recipe->slug.'.yml';
       Storage::put($path, $yaml);
-      return redirect()->route('recipes.batch.show',['id'=>$recipe->id]);
+      return redirect()->route('app.recipes.batch.show',['id'=>$recipe->id]);
     }
 
     public function importFromYaml(Request $request)
@@ -141,7 +141,7 @@ class BuildRecipesController extends Controller
       $recipe->procedures = $file['procedures'];
       $recipe->quality = $file['quality'];
       $recipe->save();
-      return redirect()->route('recipes.build.show',['id'=>$recipe->id]);
+      return redirect()->route('app.recipes.build.show',['id'=>$recipe->id]);
     }
 
     public function readFromYaml()

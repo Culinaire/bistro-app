@@ -1,7 +1,4 @@
-<a class="btn btn-primary" href="{{ route('recipes.'.$recipe->type.'.export', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Export Config</a>
-<a class="btn btn-primary" href="{{ route('recipes.'.$recipe->type.'.importyaml', ['id'=> $recipe->id]) }}"><span class="fa fa-pencil"></span> Import Config</a>
-
-{!! Form::model($recipe, ['route'=> ['recipes.build.update',$recipe->id], 'class'=>'form form-horizontal', 'method'=>'put']) !!}
+{!! Form::model($recipe, ['route'=> ['app.recipes.build.update',$recipe->id], 'class'=>'form form-horizontal', 'method'=>'put']) !!}
 
 <div class="form-group">
   {!! Form::label('name', 'Name: ', ['class'=>'col-md-3 control-label']) !!}

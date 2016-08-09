@@ -13,6 +13,7 @@ bootstrap/compiled.php
 app/storage/
 
 # Laravel 5 & Lumen specific
+public/build/**/*
 bootstrap/cache/
 .env.*.php
 .env.php
@@ -25,10 +26,11 @@ bootstrap/cache/
 .DS_Store
 
 # Compiled
-resources/assets/**/*
 **/*.css.map
-public/build/rev-manifest.json
-public/build/css/app-9c5d9d5ad1.css
-public/build/js/bootstrap-fb81549ee2.js
+public/build
 Envoy.blade.php
 images
+
+# Sass
+.sass-cache
+*.css.map
